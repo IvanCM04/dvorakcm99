@@ -10,7 +10,7 @@ http.createServer(function (req, res) {
     if (typeof jugador.nombre === 'string' && 
         typeof jugador.pos === 'object' &&
         typeof jugador.pos.length === 'number' &&
-        jugador.pos.length === '2') {
+        jugador.pos.length === 2) {
         res.end('Correcto');
     } else {
       res.end('Incorrecto');
