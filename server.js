@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
     var jugador = JSON.parse(q.jugador);
     if (typeof jugador.nombre === 'string') {
         res.end('Correcto');
-    } else if {
+    } else {
       res.end('Incorrecto');
     }
   } else {
