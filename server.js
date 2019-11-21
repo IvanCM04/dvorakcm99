@@ -6,7 +6,12 @@ http.createServer(function (req, res) {
   var q = url.parse(req.url, true).query;
   if (q.jugador) {
     // Por lo menos lo intentamos
-    res.end('Recibido')
+    var jugador = JSON.parse(q.jugador);
+    if (typeof jugador.nombre === 'string') {
+        res.end('Correcto');
+    } else if {
+      res.end('Incorrecto');
+    }
   } else {
     res.end('Error');
   }
